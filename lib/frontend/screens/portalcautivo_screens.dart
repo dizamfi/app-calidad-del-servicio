@@ -5,7 +5,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
 import '../widgets/widgets.dart';
 
-void main() => runApp(const PortalCautivoScreens());
+// void main() => runApp(const PortalCautivoScreens());
 
 class PortalCautivoScreens extends StatefulWidget {
   static String nombre_user = '';
@@ -202,7 +202,3 @@ void alertCerrarSesion(BuildContext context) {
     },
   );
 }
-
-
-
-//'http://192.168.1.1:2050/splash.html?redir=http%3a%2f%2f192.168.1.1%2fcgi-bin%2fluci%2f'

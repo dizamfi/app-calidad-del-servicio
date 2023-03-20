@@ -38,10 +38,6 @@ class _MyAppState extends State<MyApp> {
       messengerKey.currentState?.showSnackBar(snackBar);
     });
 
-    // if (CuentaRegresivaProvider.tiempoRestante == 7190.0) {
-    //   ServicioNotificacionPush.enviarPeticion();
-    // }
-
     super.initState();
   }
 

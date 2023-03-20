@@ -1,12 +1,11 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 import '../providers/cuenta_regresiva_provider.dart';
 
 class RadialProgress extends StatefulWidget {
-  final porcentaje;
+  final double porcentaje;
   final Color colorPrimario;
   final Color colorSecundario;
   final Widget? child;

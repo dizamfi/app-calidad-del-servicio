@@ -2,7 +2,6 @@ import 'package:calidad_del_servicio/frontend/providers/survey_model_provider.da
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:provider/provider.dart';
-import 'package:webview_flutter/webview_flutter.dart';
 
 class EncuestaConexionScreen extends StatelessWidget {
   const EncuestaConexionScreen({Key? key}) : super(key: key);

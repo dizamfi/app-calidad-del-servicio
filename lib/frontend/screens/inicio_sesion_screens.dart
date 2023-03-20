@@ -1,14 +1,13 @@
 import 'package:calidad_del_servicio/services/services.dart';
 import 'package:flutter/material.dart';
 import 'package:calidad_del_servicio/services/servicio_postgres.dart';
-
 import 'package:provider/provider.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 import '../providers/cuenta_regresiva_provider.dart';
 import '../widgets/widgets.dart';
 
 class IncioSesionScreen extends StatelessWidget {
-  static String mensajePortal = 'Prueba';
+  // static String mensajePortal = 'Prueba';
   const IncioSesionScreen({Key? key}) : super(key: key);
 
   @override

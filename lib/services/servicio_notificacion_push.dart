@@ -7,8 +7,8 @@ import 'package:http/http.dart' as http;
 class ServicioNotificacionPush {
   static FirebaseMessaging mensajeria = FirebaseMessaging.instance;
   static String? token;
-  static StreamController<String> _messageStream =
-      new StreamController.broadcast();
+  static final StreamController<String> _messageStream =
+      StreamController.broadcast();
   static Stream<String> get messagesStream => _messageStream.stream;
 
   static Future _backgroundMessage(RemoteMessage mensaje) async {

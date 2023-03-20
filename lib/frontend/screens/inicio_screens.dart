@@ -1,6 +1,5 @@
 import 'package:calidad_del_servicio/frontend/widgets/widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:webview_flutter/webview_flutter.dart';
 
 class InicioScreen extends StatelessWidget {
   const InicioScreen({Key? key}) : super(key: key);
@@ -20,7 +19,7 @@ class InicioScreen extends StatelessWidget {
                   EdgeInsets.only(top: height * 0.15, bottom: height * 0.1),
               child: Center(child: Image.asset('assets/logo_cti.png')),
             ),
-            SizedBox(
+            const SizedBox(
               height: 100,
             ),
             Column(
@@ -33,48 +32,48 @@ class InicioScreen extends StatelessWidget {
                       onPressed: () {
                         Navigator.pushNamed(context, 'inicio_sesion_screen');
                       },
+                      // ignore: sort_child_properties_last
                       child: const Center(
                           child:
                               Text('Iniciar', style: TextStyle(fontSize: 18))),
                       style: ElevatedButton.styleFrom(
-                          backgroundColor: Color.fromRGBO(12, 31, 122, 1),
-                          fixedSize: Size.fromHeight(50),
-                          side: BorderSide(
+                          backgroundColor: const Color.fromRGBO(12, 31, 122, 1),
+                          fixedSize: const Size.fromHeight(50),
+                          side: const BorderSide(
                               color: Color.fromARGB(255, 189, 189, 189),
                               width: 1.5),
-                          shape: BeveledRectangleBorder(
+                          shape: const BeveledRectangleBorder(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(12))),
-                          shadowColor: Color.fromARGB(255, 0, 0, 0),
+                          shadowColor: const Color.fromARGB(255, 0, 0, 0),
                           elevation: 10)),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 8,
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 60),
-                  child: Container(
-                    child: ElevatedButton(
-                        onPressed: () {
-                          Navigator.pushNamed(context, 'registro_screen');
-                        },
-                        child: const Center(
-                            child: Text(
-                          'Registrarse',
-                          style: TextStyle(fontSize: 18),
-                        )),
-                        style: ElevatedButton.styleFrom(
-                            backgroundColor: Color.fromRGBO(12, 31, 122, 1),
-                            fixedSize: Size.fromHeight(50),
-                            side: BorderSide(
-                                color: Color.fromARGB(255, 189, 189, 189),
-                                width: 1.5),
-                            shape: BeveledRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(12))),
-                            shadowColor: Color.fromARGB(255, 0, 0, 0),
-                            elevation: 10)),
-                  ),
+                  child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.pushNamed(context, 'registro_screen');
+                      },
+                      // ignore: sort_child_properties_last
+                      child: const Center(
+                          child: Text(
+                        'Registrarse',
+                        style: TextStyle(fontSize: 18),
+                      )),
+                      style: ElevatedButton.styleFrom(
+                          backgroundColor: const Color.fromRGBO(12, 31, 122, 1),
+                          fixedSize: const Size.fromHeight(50),
+                          side: const BorderSide(
+                              color: Color.fromARGB(255, 189, 189, 189),
+                              width: 1.5),
+                          shape: const BeveledRectangleBorder(
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(12))),
+                          shadowColor: const Color.fromARGB(255, 0, 0, 0),
+                          elevation: 10)),
                 )
               ],
             ),

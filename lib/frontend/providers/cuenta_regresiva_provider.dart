@@ -8,7 +8,6 @@ class CuentaRegresivaProvider extends ChangeNotifier {
   static int time = 7200;
 
   Duration duracion = const Duration(seconds: 7200);
-  //bool isRunning = false;
   String ip = '1.1.1.1';
   String mac = '00:00:00:00';
   late StreamSubscription<int> stream;
@@ -16,9 +15,6 @@ class CuentaRegresivaProvider extends ChangeNotifier {
     'cedula': '',
     'contrasena': '',
   };
-
-  // bool _isReflecting = false;
-  // late Timer time;
 
   void timer() {
     _iniciarTimer(duracion.inSeconds + aumtentoTime);

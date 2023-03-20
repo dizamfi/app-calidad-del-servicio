@@ -3,8 +3,6 @@ import 'dart:math';
 import 'package:calidad_del_servicio/frontend/widgets/radial_progress.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
-import '../../services/servicio_notificacion_push.dart';
 import '../providers/cuenta_regresiva_provider.dart';
 
 class Contador extends StatelessWidget {
@@ -37,14 +35,10 @@ class ContadorRadial extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(10),
-      margin: EdgeInsets.all(4),
+      margin: const EdgeInsets.all(4),
       width: double.infinity,
       height: 250,
-      decoration: BoxDecoration(
-          // border: Border.all(
-          //   width: 3,
-          //   color: Colors.transparent,
-          // ),
+      decoration: const BoxDecoration(
           shape: BoxShape.circle,
           gradient: LinearGradient(colors: [
             Color.fromARGB(133, 152, 179, 192),
